@@ -30,4 +30,4 @@ jobs:
       - name: Grant execution permisson to integration script
         run: chmod +x ./scripts/run-integration.sh
       - name: Run integration script
-        run: npm run test:integration -- --run
+        run: npm run test:integration || exit 1
