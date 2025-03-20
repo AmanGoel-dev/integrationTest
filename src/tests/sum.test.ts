@@ -6,7 +6,7 @@ describe("Checking the sum functionality", () => {
   it("should add 1 and 2 = 3 ", async () => {
     const res = await request(app).post("/sum").send({
       a: 1,
-      b: 2,
+      b: 25,
     });
 
     expect(res.statusCode).toBe(200);
